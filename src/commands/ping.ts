@@ -4,7 +4,7 @@ import { Command } from "../interfaces/Command";
 export const ping: Command = {
   data: new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('Replies with Pong!'),
+    .setDescription('Responde com Pong!'),
 
   run: async(interaction) => {
     await interaction.reply('Pong!');
